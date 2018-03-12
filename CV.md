@@ -1,4 +1,3 @@
-
 **Katjana Wiederkehr**
 ====================== 
 
@@ -12,7 +11,7 @@
     * *Bachelor of Science in Anthropology*
 	* *Departmental Major in Latin American Studies*
     * *Bachelor of Arts in Biology*
-    * *Minor: Spanish*
+    * Minor: *Spanish*
     * Recipient of the Sturgis Fellowship
     * GPA: 4.0
 
