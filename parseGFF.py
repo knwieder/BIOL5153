@@ -15,5 +15,5 @@ for genome in SeqIO.parse("watermelon.fsa", "fasta"):
             gene = line.split()[10]
             print(">Citrullus_lanatus_{}".format(gene) + '\n' + (genome.seq[int(start):int(end)+1]))
 # split lin into list, use begin and end coords to extract info from the genome
-# print these with header that tells gene and organism
+# print with header that tells gene and organism
 # close GFF file
