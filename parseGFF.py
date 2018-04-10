@@ -19,15 +19,15 @@ for genome in SeqIO.parse(args.fasta, "fasta"):
 #open gff file and read in line by line with loop
     with open(args.gff) as lines:
         for line in lines.readlines():
-            #(seqname, source, feature, start, end, score, strand, frame, attribute) = line.split("\t")
-             #find the headers for gff files
-            start = line.split()[4]
-            end = line.split()[5]
+            (seqname, source, feature, start, end, score, strand, frame, attribute) = line.split("\t")
             gene = line.split()[10]
-            h1 = line.split()[0]
-            h2 = line.split()[1]
-            print(">{}_{}".format(h1, gene) + '\n' + (genome.seq[int(start):int(end)+1]))
-# split lin into list, use begin and end coords to extract info from the genome
+            print(">{}_{}".format(seqname, gene) + '\n' + (genome.seq[int(start):int(end)+1]))
+# split line into list, use begin and end coords to extract info from the genome
 # print with header that tells gene and organism
 # close GFF file
-#seqname, attribute
+
+#find the headers for gff files
+#start = line.split()[4]
+#end = line.split()[5]
+#h1 = line.split()[0]
+#h2 = line.split()[1]
