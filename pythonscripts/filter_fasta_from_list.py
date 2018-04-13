@@ -18,10 +18,8 @@ for files in SeqIO.parse(args.fasta, "fasta"):
     with open(args.fasta, 'r') as f:
         for query in names:
             for line in f:
-               if query in line:
+               if not query in line:
                    print(line, next(f))
-
-
 
     #with open(args.fasta, 'r') as f:
     #    lines = [l.strip() for l in f]
