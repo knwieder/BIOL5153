@@ -19,7 +19,7 @@ def get_args():
     return parser.parse_args()
 
 def parse_fasta(fasta):
-        # open and read the fasta files
+        # open and read fasta files
         genome = SeqIO.read(fasta, "fasta")
         # for genome in SeqIO.parse(args.fasta, "fasta"):
         return genome.seq
